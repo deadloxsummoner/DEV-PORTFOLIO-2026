@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import LibraryImg from '../assets/LibraryImg.jpg';
-import Phisbols from '../assets/phisbol.webp';
+import Phisbols from '../assets/Phisbol.webp';
 import EOR from '../assets/EOR.png'
 import Achieve from '../assets/Achieve.png'
 
