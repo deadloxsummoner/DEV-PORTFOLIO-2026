@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+:root {
+  --main-font:'IBM Plex Mono';
+  --sub-font:'Gruppo';
+}
+
+body {
+  background-color: #0A0909;
+}
+
+.landing-frame {
+  z-index: 2;
+  position: relative; /* Add this */
+  top: 0; /* Add this */
+  transition: top 0.8s cubic-bezier(0.4, 0, 0.2, 1); /* Changed this */
+  background-color:#0A0909 ;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.landing-upper {
+  display:  flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  width: 100vw;
+}
+
+.project-load-container{
+  font-family:var(--main-font) ;
+  display: flex;
+  font-size: 1.2vw;
+  width: 16%;
+  justify-content: space-around;
+}
+
+.project-dot {
+  background-color: green;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+}
+
+.landing-info-desc {
+  font-family: var(--sub-font);
+  font-size: 1vw;
+  width: 17%;
+  justify-content: space-around;
+}
+
+.landing-lower-frame {
+}
+
+.hero-sub {
+
+  display:  flex;
+  justify-content: space-between;
+  
+}
+
+.hero-name {
+  transition: 0.5s linear;
+    color: white;
+    font-size: 15vw;
+    font-family: var(--main-font);
+}
+
+.hero-name:hover {
+  color: rgb(175, 175, 175);
+}
+
+.sub-desc {
+  font-family: var(--sub-font);
+  font-size: 1vw;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-date {
+  font-family: var(--sub-font);
+  font-size: 1vw;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.frame-up {
+  top: -100vh;
+}
+
+.contents-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #0A0909;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  color: white;
+  font-family: var(--main-font);
+}
+
+.row-wrapper {
+  border-bottom: 1px solid white;
+  width: 100vw;
+
+}
+
+.row-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh/11);
+}
+
+.row-header.dropdown {
+  cursor: pointer;
+}
+
+.row-header.dropdown:hover {
+  background-color: #0A0909;
+}
+
+.row-header.static {
+  background-color: #0A0909;
+}
+
+.row-title-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 2vw;
+}
+
+.row-title {
+  font-weight: 300;
+  font-size: 1.125rem;
+  font-size: 1.2vw;
+}
+
+.row-count {
+  font-size: 0.875rem;
+  color: white;
+  background-color: #0A0909;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8vw;
+}
+
+
+
+.subrows-container {
+  background-color: #0A0909;
+}
+
+.subrow {
+  padding: 0.75rem 3rem;
+  border-top: 1px solid #e5e7eb;
+  height: calc(100vh/11);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.subrow:hover {
+  background-color: #252222;
+}
+
+.subrow-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+.subrow-link:hover .subrow {
+  background-color: rgba(255, 255, 255, 0.1); 
+  cursor: pointer;
+}
+
+.floating-image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+  pointer-events: none; 
+}
+
+.floating-image {
+  aspect-ratio:3/2;
+  max-width: 60vw;
+  max-height: 60vh;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+  .floating-image {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+}
+
