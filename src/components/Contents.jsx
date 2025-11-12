@@ -52,7 +52,7 @@ export default function Contents() {
       isDropdown: true, 
       imageUrl: `${Phisbols}`,
       subRows: [
-        { name: 'Real Name: Kris Constantine F. Magallon', imageUrl: '/images/sub-phisbol1.jpg' },
+        { name: 'Name: Kris Constantine F. Magallon', imageUrl: `${Phisbols}` },
         { name: 'Achievement 2023-2024', imageUrl: `${Achieve}` },
         { name: 'Bass', imageUrl: '/images/sub-phisbol3.jpg' },
       ] 
