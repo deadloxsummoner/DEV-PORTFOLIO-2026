@@ -5,6 +5,7 @@ import LibraryImg from '../assets/LibraryImg.jpg';
 import Phisbols from '../assets/phisbol.png';
 import EOR from '../assets/EOR.png'
 import Achieve from '../assets/Achieve.png'
+import Design1 from '../assets/design1.png'
 
 export default function Contents() {
   const [openRows, setOpenRows] = useState({});
@@ -40,9 +41,9 @@ export default function Contents() {
     4: { 
       name: "DESIGNS", 
       isDropdown: true, 
-      imageUrl: '/images/designs.jpg',
+      imageUrl: `${Design1}`,
       subRows: [
-        { name: 'Sub-row 4.1', url: '/designs/design1', imageUrl: '/images/sub-design1.jpg' }
+        { name: 'BillBond', url: 'https://www.figma.com/design/wxC5Ly22YTbKE2KqNpg9IG/BillBond?node-id=0-1&p=f&t=Uaen0GGSoQlMoURi-0', imageUrl: `${Design1}` }
       ] 
     },
     5: { name: "", isDropdown: false },
